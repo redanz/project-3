@@ -4,8 +4,6 @@ import {sort as sortv3} from "./sortv3.js";
 import {sort as sortv4} from "./sortv4.js";
 import {drawBars, pause} from "./util.js";
 
-
-
 function randomArray(min, max, length) {
     let array = [];
     for (let i = 0; i < length; i++) {
@@ -30,12 +28,12 @@ async function main() {
     // console.log(url)
     // masterNumbers = JSON.parse(url.searchParams.get('array'));
     // pauseTime = parseInt(url.searchParams.get('pause'));
-    pauseTime = 50;
+    pauseTime = 3000;
     // let randomParameters = JSON.parse(url.searchParams.get('random'));
     masterNumbers = randomArray(0, 100, 70);
     // await runSort(sortv1, "V1: ");
     // await runSort(sortv2, "V2: ");
-    await runSort(sortv3, "V3: ");
+    // await runSort(sortv3, "V3: ");
     await runSort(sortv4, "V4: ");
     await runSort(function(array) {
         array.sort(function(a, b) {
