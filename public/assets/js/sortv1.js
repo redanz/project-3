@@ -1,7 +1,6 @@
 import {op} from "./main.js";
 
 export async function sort(numbers) {
-    console.log('sortv1.js')
     let possiblyUnsorted = true;
     while (possiblyUnsorted) {
         possiblyUnsorted = false;
