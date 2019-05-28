@@ -1,7 +1,6 @@
 import {op} from "./main.js";
 
 export async function sort(numbers) {
-    console.log('sortv3.js')
     let last = numbers.length-1;
     for (let i=0; i < numbers.length; i++) {
         let position = await findInsertionPoint(last, numbers, i);
