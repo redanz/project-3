@@ -1,5 +1,6 @@
 import {op} from "./main.js";
 
+// Quicksort (using pivots)
 export async function sort(numbers) {
     let last = numbers.length-1;
     for (let i=0; i < numbers.length; i++) {

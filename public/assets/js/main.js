@@ -28,13 +28,13 @@ async function main() {
     // console.log(url)
     // masterNumbers = JSON.parse(url.searchParams.get('array'));
     // pauseTime = parseInt(url.searchParams.get('pause'));
-    pauseTime = 3000;
+    pauseTime = 50;
     // let randomParameters = JSON.parse(url.searchParams.get('random'));
-    masterNumbers = randomArray(0, 100, 70);
+    masterNumbers = randomArray(0, 100, 20);
     // await runSort(sortv1, "V1: ");
     // await runSort(sortv2, "V2: ");
-    // await runSort(sortv3, "V3: ");
-    await runSort(sortv4, "V4: ");
+    await runSort(sortv3, "V3: ");
+    // await runSort(sortv4, "V4: ");
     await runSort(function(array) {
         array.sort(function(a, b) {
             op();
