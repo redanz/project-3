@@ -8,4 +8,4 @@ Run `node server.js` or `nodemon server.js` in the same directory to start the s
 
 Open [localhost:3000](http://localhost:3000/) in your browser to run the app.
 
-Select min/max values, pause between ops and version(s) of sorting algorithms to start.
+Select min/max values, pause between ops and version(s) of algorithms to see the visualization of sorting a random 50 element array.
