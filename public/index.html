@@ -1,28 +1,52 @@
 <!doctype html>
 <html>
     <head>
+    	<!-- <meta http-equiv="Content-Security-Policy" content="img-src 'self' http://localhost:3000/; default-src 'self' http://localhost:3000/"> -->
     	<link rel="shortcut icon" href="#"/>
-    	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
 
-    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    	<link rel='stylesheet' type='text/css' href='./assets/css/reset.css'>
 
-    	<link rel="stylesheet" href="assets/css/style.css">
+    	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css'>
+
+    	<link rel='stylesheet' href='assets/css/style.css'>
     		
     	</style>
         <title>Sort Project</title>
+
     </head>
     <body>
-    	<!-- <form action="index_submit" method="get" accept-charset="utf-8">
-    		Max value?
-    		<input type="text" name="max"><br>
-    		Speed:
-    		<input type="text" name="speed"><br>
 
-    		<button type="submit" id="startButton" class="btn btn-primary my-3">Start
-    			<span id="loadingButton" class="spinner-border spinner-border-sm" role="status"></span>
+    	<canvas id='canvas'></canvas>
+    	<br>
+    	<form accept-charset='utf-8' class='ml-4'>
+    		Min value:
+    		<input type='text' name='max' value='0'>
+    		Max value:
+    		<input type='text' name='max' value='100'>
+    		Pause/op (ms):
+    		<input type='text' name='speed' value='10'>
+
+    		<button type='submit' id='startButton' class='btn btn-primary my-3'>Start
+    			<span id='loadingButton' class='spinner-border spinner-border-sm' role='status'></span>
     		</button>
-    	</form> -->
-        <canvas id="canvas"></canvas>
-        <script src="./assets/js/main.js" type="module"></script>
+    		<span class='m-5' id='versions'>
+	    		<label class="checkbox-inline">
+	    			<input type="checkbox" class='versionCheckbox' checked='true' value="1">V1
+	    		</label>
+	    		<label class="checkbox-inline">
+	    			<input type="checkbox" class='versionCheckbox' checked='true' value="2">V2
+	    		</label>
+	    		<label class="checkbox-inline">
+		    		<input type="checkbox" class='versionCheckbox' checked='true' value="3">V3
+			    </label>
+			    <label class="checkbox-inline">
+		    		<input type="checkbox" class='versionCheckbox' checked='true' value="4">V4
+    		</span>
+    		
+		    </label>
+    	</form>
+    		
+        
+        <script src='./assets/js/main.js' type='module'></script>
     </body>
 </html>

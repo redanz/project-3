@@ -3,14 +3,17 @@ import {op} from "./main.js";
 let canvas = document.querySelector('canvas');
 let width = window.innerWidth;
 // console.log(document.querySelector('form').offsetHeight, document.querySelector('form').offsetWidth)
-let height = window.innerHeight-10;
+let height = window.innerHeight-100;
+
 canvas.width = width;
 canvas.height = height;
 let ctx = canvas.getContext('2d');
 
 window.addEventListener('resize', function(){
     width = window.innerWidth;
-    height = window.innerHeight;
+    height = window.innerHeight-100;
+    canvas.width = width;
+    canvas.height = height;
 })
 
 export async function drawBars(numbers, version, color1, color2, color3, numComparisons, pauseTime) {
